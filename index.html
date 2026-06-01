@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maulana Izza Mahadika — Data Analytics Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">Maulana Izza.</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-eyebrow">Data Analytics Portfolio</div>
+      <h1 class="hero-title">
+        Turning raw data<br>into <em>clear stories</em>
+      </h1>
+      <p class="hero-desc">
+        Hi, I'm Maulana Izza Mahadika — a data analyst focused on business intelligence 
+        and interactive dashboard development.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      Scroll to explore
+    </div>
+  </section>
+
+  <!-- STATS BAR
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-number">3</span>
+      <span class="stat-label">Projects</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">4</span>
+      <span class="stat-label">Machines Monitored</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">3.6K+</span>
+      <span class="stat-label">Transactions Analyzed</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">8K+</span>
+      <span class="stat-label">Netflix Records</span>
+    </div>
+  </div> -->
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">Work</div>
+    <h2 class="section-title reveal">Selected Projects</h2>
+    <p class="section-desc reveal">A collection of data analytics and visualization projects — from real-time manufacturing monitoring to consumer behavior analysis.</p>
+
+    <div class="projects-grid">
+
+      <!-- OEE -->
+      <a href="projects/oee.html" class="project-card reveal">
+        <div class="project-thumb project-thumb-oee">
+          <div class="thumb-pattern">
+            <span class="thumb-icon">⚙️</span>
+          </div>
+          <span class="thumb-badge">Manufacture</span>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Manufacturing Analytics</div>
+          <h3 class="project-title">Real-Time OEE Dashboard</h3>
+          <p class="project-desc">Built a live monitoring pipeline for 4 production machines — tracking availability, performance, quality, and downtime</p>
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">Metabase</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- E-COMMERCE -->
+      <a href="projects/ecommerce.html" class="project-card reveal">
+        <div class="project-thumb project-thumb-ecom">
+          <div class="thumb-pattern">
+            <span class="thumb-icon">🛒</span>
+          </div>
+          <span class="thumb-badge thumb-badge-dark">Business Intelligence</span>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Sales Analytics</div>
+          <h3 class="project-title">E-Commerce Sales Analytics</h3>
+          <p class="project-desc">Analyzed 3,660 transactions across 8 product categories to uncover revenue patterns, discount effectiveness, and monthly sales trends.</p>
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Kaggle</span>
+            </div>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </a>
+
+      <!-- NETFLIX -->
+      <a href="projects/netflix.html" class="project-card reveal">
+        <div class="project-thumb project-thumb-netflix">
+          <div class="thumb-pattern">
+            <span class="thumb-icon">🎬</span>
+          </div>
+          <span class="thumb-badge">Capstone Project</span>
+        </div>
+        <div class="project-body">
+          <div class="project-category">Content Analytics</div>
+          <h3 class="project-title">Netflix Genre Analysis</h3>
+          <p class="project-desc">Explored genre trends across 8,000+ Netflix titles with spotlight on documentary releases in the US from 2012–2021, uncovering content strategy insights.</p>
+          <div class="project-footer">
+            <div class="tech-tags">
+              <span class="tech-tag">Looker Studio</span>
+              <span class="tech-tag">Excel</span>
+              <span class="tech-tag">Kaggle</span>
+            </div>
+            <div class="card-arrow">→</div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h2 class="section-title">A data enthusiast with a manufacturing background</h2>
+        <p>I'm Maulana Izza Mahadika, a data analyst with a strong interest in transforming data into meaningful insights that support business decisions.</p>
+        <p>I enjoy exploring data, uncovering patterns, and presenting insights through intuitive dashboards and visualizations.</p>
+        <p>Currently expanding my skills in data engineering and business intelligence through hands-on projects and continuous learning.</p>
+        <br>
+        <a href="#contact" class="btn btn-outline" style="width:fit-content">Let's connect →</a>
+      </div>
+      <div class="skills-grid reveal">
+        <div class="skill-item">
+          <div class="skill-cat">Visualization</div>
+          <div class="skill-tools">Metabase<br>Power BI<br>Looker Studio</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-cat">Data & Database</div>
+          <div class="skill-tools">MySQL<br>Excel<br>Google Sheets</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-cat">Analytics</div>
+          <div class="skill-tools">OEE Analysis<br>Sales Analytics<br>Content Analysis</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-cat">Domain</div>
+          <div class="skill-tools">Manufacturing<br>E-Commerce<br>Media & Content</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Contact</div>
+    <h2 class="section-title">Let's work together</h2>
+    <p class="section-desc">Open to data analyst roles, freelance projects, or just a good conversation about data.</p>
+    <div class="contact-links">
+      <a href="mailto:[mm.izza08@gmail.com]" class="contact-link">✉ Email</a>
+      <a href="https://linkedin.com/in/maulana-izza-mahadika" target="_blank" class="contact-link">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Maulana Izza Mahadika</p>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

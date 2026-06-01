@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Genre Analysis — Maulana Izza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Maulana Izza.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="project-hero project-hero--netflix">
+    <div class="hero-meta">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../index.html#projects">Projects</a>
+        <span>/</span>
+        Netflix Genre Analysis
+      </div>
+      <div class="project-label">Content Analytics · Kampus Merdeka x RevoU</div>
+      <h1 class="project-hero-title">Netflix<br>Genre Analysis</h1>
+      <div class="hero-tags">
+        <span class="hero-tag">Looker Studio</span>
+        <span class="hero-tag">Excel</span>
+        <span class="hero-tag">Kaggle Dataset</span>
+        <span class="hero-tag">Content Strategy</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="project-content">
+
+    <!-- GROUP NOTE -->
+    <div class="group-note reveal">
+      <strong>Group Project Note —</strong> This was a capstone project completed as part of Kampus Merdeka x RevoU. My contributions included data cleaning, Looker Studio dashboard development, and insight analysis.
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="content-section reveal">
+      <div class="content-label">Background</div>
+      <h2 class="content-title">What stories does Netflix data tell?</h2>
+      <div class="content-body">
+        <p>Netflix hosts thousands of titles across genres and countries, making it one of the richest datasets for understanding content strategy in the streaming industry. But what genres dominate globally? And how have documentary releases shifted over the past decade in the US?</p>
+        <p>This capstone project set out to answer those questions — exploring genre trends, country distributions, and the trajectory of documentaries on Netflix between 2012 and 2021 using a dataset of over 8,000 titles from Kaggle.</p>
+      </div>
+    </div>
+
+    <!-- BUSINESS QUESTIONS -->
+    <div class="content-section reveal">
+      <div class="content-label">Business Questions</div>
+      <h2 class="content-title">What we set out to answer</h2>
+      <div class="bq-grid">
+        <div class="bq-card">
+          <div class="bq-num">1</div>
+          <div class="bq-text">What is the most released genre on Netflix globally and specifically in the United States?</div>
+        </div>
+        <div class="bq-card">
+          <div class="bq-num">2</div>
+          <div class="bq-text">Out of the last 10 years (2012–2021), which year had the highest number of documentary releases in the US?</div>
+        </div>
+        <div class="bq-card">
+          <div class="bq-num">3</div>
+          <div class="bq-text">Who is the most prolific director and actor in the documentary genre on Netflix?</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DB OVERVIEW -->
+    <div class="content-section reveal">
+      <div class="content-label">Data Source</div>
+      <h2 class="content-title">Dataset overview</h2>
+      <div class="content-body">
+        <p>Dataset sourced from Kaggle — Netflix Movies and TV Shows — containing details on cast, directors, ratings, release years, duration, and genre categories.</p>
+      </div>
+      <div class="db-overview">
+        <div class="db-card">
+          <div class="db-icon">🎬</div>
+          <div class="db-number">2,486</div>
+          <div class="db-label">Data Records</div>
+        </div>
+        <div class="db-card">
+          <div class="db-icon">🎥</div>
+          <div class="db-number">225</div>
+          <div class="db-label">Movie Titles</div>
+        </div>
+        <div class="db-card">
+          <div class="db-icon">🏷️</div>
+          <div class="db-number">15</div>
+          <div class="db-label">Genres</div>
+        </div>
+        <div class="db-card">
+          <div class="db-icon">⭐</div>
+          <div class="db-number">9</div>
+          <div class="db-label">Rating Types</div>
+        </div>
+      </div>
+
+      <!-- PIPELINE -->
+      <div class="pipeline">
+        <div class="pipe-step">
+          <div class="pipe-icon">📦</div>
+          <div class="pipe-label">Kaggle Dataset</div>
+          <div class="pipe-sub">Raw CSV</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">🧹</div>
+          <div class="pipe-label">Excel Cleaning</div>
+          <div class="pipe-sub">Filter & format</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">📊</div>
+          <div class="pipe-label">Looker Studio</div>
+          <div class="pipe-sub">Visualization</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">💡</div>
+          <div class="pipe-label">Insight</div>
+          <div class="pipe-sub">Analysis & Rec</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="content-section reveal">
+      <div class="content-label">Dashboard</div>
+      <h2 class="content-title">Looker Studio visualization</h2>
+      <div class="content-body">
+        <p>The interactive Looker Studio dashboard covers genre distribution globally and by country, documentary release trends over time, and top creators in the documentary space.</p>
+      </div>
+      <div class="dashboard-preview dashboard-preview--netflix">
+        <img src="../assets/Netflix_Visualization_Group_3_page-0001.jpg" alt="Netflix Genre Analysis Dashboard" class="dashboard-img" />
+      </div>
+    </div>
+
+    <!-- INSIGHT -->
+    <div class="content-section reveal">
+      <div class="content-label">Insight</div>
+      <h2 class="content-title">Key findings</h2>
+      <div class="insight-grid">
+        <div class="insight-card highlight">
+          <div class="insight-stat">359</div>
+          <div class="insight-title">Documentaries Lead Globally</div>
+          <div class="insight-desc">Documentaries are the most released genre worldwide with 359 titles, followed by Stand-Up Comedy (334). However in the US, Stand-Up Comedy takes the top spot.</div>
+        </div>
+        <div class="insight-card highlight">
+          <div class="insight-stat">2017</div>
+          <div class="insight-title">Peak Year for Documentaries</div>
+          <div class="insight-desc">2017 saw the highest number of documentary releases in the US with 54 titles — likely reflecting rising political awareness and the growth of streaming content.</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-stat">54→3</div>
+          <div class="insight-title">Continuous Decline Post-2017</div>
+          <div class="insight-desc">Documentary releases dropped consistently from 54 titles in 2017 to just 3 in 2021 — a significant shift in Netflix's US content strategy over four years.</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-stat">382+</div>
+          <div class="insight-title">Samuel West Leads Actors</div>
+          <div class="insight-desc">Samuel West is the most frequent actor in documentary genre films with 382+ appearances, while Vlad Yudin is the most prolific documentary director on the platform.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TREND VIZ -->
+    <div class="content-section reveal">
+      <div class="content-label">Documentary Trend</div>
+      <h2 class="content-title">US documentary releases 2012–2021</h2>
+      <div class="trend-box">
+        <div class="trend-title">Releases per Year — Documentaries in US</div>
+        <div class="trend-bars" id="trendBars"></div>
+      </div>
+    </div>
+
+    <!-- RECOMMENDATION -->
+    <div class="content-section reveal">
+      <div class="content-label">Recommendation</div>
+      <h2 class="content-title">Suggested actions for Netflix</h2>
+      <div class="rec-grid">
+        <div class="rec-card">
+          <div class="rec-icon">🤝</div>
+          <div class="rec-content">
+            <div class="rec-title">Collaborate with Documentary Filmmakers</div>
+            <div class="rec-desc">Partner with directors specializing in documentary, film industry, or cultural trends to promote documentary content and share exclusive insights on the platform.</div>
+          </div>
+        </div>
+        <div class="rec-card">
+          <div class="rec-icon">🎯</div>
+          <div class="rec-content">
+            <div class="rec-title">Boost Stand-Up Comedy for US Market</div>
+            <div class="rec-desc">Since Stand-Up Comedy leads in the US, expanding collaborations with comedians and increasing content production in this genre can strengthen engagement.</div>
+          </div>
+        </div>
+        <div class="rec-card">
+          <div class="rec-icon">🌐</div>
+          <div class="rec-content">
+            <div class="rec-title">Engage Online Documentary Communities</div>
+            <div class="rec-desc">Join and engage with online communities, forums, and platforms dedicated to documentary enthusiasts to share updates and drive viewership.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="project-nav">
+    <a href="ecommerce.html" class="proj-nav-link">
+      ← Previous
+      <span class="proj-nav-title">E-Commerce Sales Analytics</span>
+    </a>
+    <a href="../index.html" class="proj-nav-link" style="text-align:right">
+      ← Back
+      <span class="proj-nav-title">All Projects</span>
+    </a>
+  </div>
+
+  <script>
+    // Trend bar chart
+    const data = [
+      { year: '2012', val: 3 },
+      { year: '2013', val: 13 },
+      { year: '2014', val: 9 },
+      { year: '2015', val: 19 },
+      { year: '2016', val: 41 },
+      { year: '2017', val: 54 },
+      { year: '2018', val: 37 },
+      { year: '2019', val: 27 },
+      { year: '2020', val: 15 },
+      { year: '2021', val: 7 },
+    ];
+    const max = Math.max(...data.map(d => d.val));
+    const container = document.getElementById('trendBars');
+    data.forEach(d => {
+      const wrap = document.createElement('div');
+      wrap.className = 'trend-bar-wrap';
+      const bar = document.createElement('div');
+      bar.className = 'trend-bar';
+      bar.style.height = `${(d.val / max) * 100}px`;
+      bar.title = `${d.year}: ${d.val} releases`;
+      const val = document.createElement('div');
+      val.className = 'trend-val';
+      val.textContent = d.val;
+      const year = document.createElement('div');
+      year.className = 'trend-year';
+      year.textContent = d.year;
+      wrap.appendChild(val);
+      wrap.appendChild(bar);
+      wrap.appendChild(year);
+      container.appendChild(wrap);
+    });
+
+    // Reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
