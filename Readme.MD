@@ -1,8 +1,8 @@
-# 📊 Data Analytics Portfolio — Maulana Izza Mahadika
+# Data Analytics Portfolio — Maulana Izza Mahadika
 
 A personal portfolio website showcasing data analytics and visualization projects across manufacturing, e-commerce, and media industries.
 
-🔗 **Live site:** [https://maulanaizza-data-analytics-portfolio.vercel.app/](https://maulanaizza-data-analytics-portfolio.vercel.app/)
+**Live site:** [https://datawithizza.vercel.app/](https://datawithizza.vercel.app/)
 ---
 
 ### 1. Real-Time OEE Command Center
@@ -39,7 +39,7 @@ Explored genre trends across 8,000+ Netflix titles with a spotlight on documenta
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Category | Tools |
 |---|---|
@@ -50,11 +50,9 @@ Explored genre trends across 8,000+ Netflix titles with a spotlight on documenta
 
 ---
 
-## 📬 Contact
+## Contact
 
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- **Email:** your@email.com
+- **LinkedIn:** [https://www.linkedin.com/in/maulana-izza-mahadika/](https://www.linkedin.com/in/maulana-izza-mahadika/)
+- **Email:** [mm.izza08@gmail.com]
 
 ---
-
-*Built with HTML · CSS · JavaScript · Deployed on Vercel*
