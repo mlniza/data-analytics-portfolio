@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OEE Command Center — Maulana Izza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Maulana Izza.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="project-hero project-hero--oee">
+    <div class="hero-meta">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../index.html#projects">Projects</a>
+        <span>/</span>
+        OEE Dashboard
+      </div>
+      <div class="project-label">Manufacturing Analytics · Internship Project</div>
+      <h1 class="project-hero-title">Real-Time OEE<br>Dashboard</h1>
+      <div class="hero-tags">
+        <span class="hero-tag">Metabase</span>
+        <span class="hero-tag">MySQL</span>
+        <span class="hero-tag">Manufacturing Analytics</span>
+        <span class="hero-tag">Real-time Dashboard</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="project-content">
+
+    <!-- BACKGROUND -->
+    <div class="content-section reveal">
+      <div class="content-label">Background</div>
+      <h2 class="content-title">From blind spots to real-time visibility</h2>
+      <div class="content-body">
+        <p>In a manufacturing environment, machine downtime and performance drops often go unnoticed until they've already impacted production output. Without a centralized monitoring system, operators and supervisors had to rely on manual checks and periodic reports — reactive rather than proactive.</p>
+        <p>This project was developed during my internship to solve that problem: building a live data pipeline and monitoring dashboard for 4 production machines — PU Cabinet N5, PU Door N5, Thermodoor N5, and N5 Final — giving the production team full visibility into machine health at any moment.</p>
+      </div>
+    </div>
+
+    <!-- PIPELINE -->
+    <div class="content-section reveal">
+      <div class="content-label">Architecture</div>
+      <h2 class="content-title">Data pipeline</h2>
+      <div class="pipeline">
+        <div class="pipe-step">
+          <div class="pipe-icon">⚙️</div>
+          <div class="pipe-label">Production Machine</div>
+          <div class="pipe-sub">Input by IoT</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">🗄️</div>
+          <div class="pipe-label">MySQL Database</div>
+          <div class="pipe-sub">Internal server</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">📊</div>
+          <div class="pipe-label">Metabase BI</div>
+          <div class="pipe-sub">Query via SQL</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">🖥️</div>
+          <div class="pipe-label">Live Dashboard</div>
+          <div class="pipe-sub">Auto-refresh</div>
+        </div>
+      </div>
+      <div class="content-body">
+        <p>Data is inputted by IoT tools at regular intervals, covering running time, breakdown duration, good output, reject count, and takt time. 
+          This feeds directly into the MySQL database, which Metabase queries to render the live dashboard.</p>
+      </div>
+    </div>
+
+    <!-- OEE FORMULA -->
+    <div class="content-section reveal">
+      <div class="content-label">Metric Definition</div>
+      <h2 class="content-title">How OEE is calculated</h2>
+      <div class="content-body">
+        <p>OEE (Overall Equipment Effectiveness) is the gold standard for measuring manufacturing productivity. It is the product of three factors:</p>
+      </div>
+      <table class="metrics-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Formula</th>
+            <th>PU Cabinet N5</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Availability</strong></td>
+            <td>Run Time / Planned Production Time</td>
+            <td class="metric-val">90,90%</td>
+          </tr>
+          <tr>
+            <td><strong>Performance</strong></td>
+            <td>Actual Output / Ideal Output (Takt Time)</td>
+            <td class="metric-val">76,10%</td>
+          </tr>
+          <tr>
+            <td><strong>Quality</strong></td>
+            <td>Good Units / Total Units Produced</td>
+            <td class="metric-val">100,00%</td>
+          </tr>
+          <tr class="metric-highlight">
+            <td><strong>OEE</strong></td>
+            <td>Availability × Performance × Quality</td>
+            <td class="metric-val">69,20%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="threshold-bar">
+        <div class="threshold-item">
+          <div class="threshold-dot dot-red"></div>
+          <div>
+            <div class="threshold-label">Low</div>
+            <div class="threshold-range">&lt; 65%</div>
+          </div>
+        </div>
+        <div class="threshold-item">
+          <div class="threshold-dot dot-yellow"></div>
+          <div>
+            <div class="threshold-label">Medium</div>
+            <div class="threshold-range">65% – 85%</div>
+          </div>
+        </div>
+        <div class="threshold-item">
+          <div class="threshold-dot dot-green"></div>
+          <div>
+            <div class="threshold-label">Good</div>
+            <div class="threshold-range">≥ 85%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="content-section reveal">
+      <div class="content-label">Dashboard</div>
+      <h2 class="content-title">Interactive monitoring view</h2>
+      <div class="content-body">
+        <p>The dashboard displays real-time status for each machine including machine running state, KPI metrics, hourly plan vs actual output, breakdown composition, and downtime distribution. An automated alert log captures anomaly events with timestamps.</p>
+      </div>
+      <div class="dashboard-preview dashboard-preview--oee">
+        <img src="../assets/OEE_Dashboard.jpeg" alt="OEE Dashboard" class="dashboard-img"/>
+      </div>
+    </div>
+
+    <!-- INSIGHT -->
+    <div class="content-section reveal">
+      <div class="content-label">Insight & Analysis</div>
+      <h2 class="content-title">Key findings from PU Cabinet N5</h2>
+      <div class="insight-grid">
+        <div class="insight-card highlight">
+          <div class="insight-num">69.2%</div>
+          <div class="insight-title">OEE Level: Medium</div>
+          <div class="insight-desc">Below world-class standard of 85%, primarily driven by Performance at 76.10% despite perfect Quality score.</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-num">76.1%</div>
+          <div class="insight-title">Performance is the bottleneck</div>
+          <div class="insight-desc">Speed loss is the main OEE depressor — machine runs below ideal throughput, not due to breakdowns.</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-num">82.6%</div>
+          <div class="insight-title">Downtime is Operational</div>
+          <div class="insight-desc">82.56% of downtime is production-related (material change, setup, waiting), not machine failure (17.44%).</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-num">100%</div>
+          <div class="insight-title">Quality is Perfect</div>
+          <div class="insight-desc">Zero Defects Quality holds at 100%. Every unit meets standard, eliminating quality loss as a concern entirely.</div>
+        </div>
+      </div>
+      <br>
+      <div class="content-body">
+        <p><strong>Recommendation:</strong> Since 82.56% of downtime is production-related rather than mechanical, improvement should focus on operational efficiency. 
+          Key areas include streamlining material supply and reducing non-value-added waiting time, rather than machine maintenance.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="project-nav">
+    <a href="../index.html#projects" class="proj-nav-link">← Back to all projects</a>
+    <a href="ecommerce.html" class="proj-nav-link" style="text-align:right">
+      Next Project →
+      <span class="proj-nav-title">E-Commerce Sales Analytics</span>
+    </a>
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

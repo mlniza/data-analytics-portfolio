@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Sales Analytics — Maulana Izza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-logo">Maulana Izza.</a>
+    <ul class="nav-links">
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="project-hero project-hero--ecom">
+    <div class="hero-meta">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>/</span>
+        <a href="../index.html#projects">Projects</a>
+        <span>/</span>
+        E-Commerce Sales Analytics
+      </div>
+      <div class="project-label">Sales Analytics · Personal Project</div>
+      <h1 class="project-hero-title">E-Commerce<br>Sales Analytics</h1>
+      <div class="hero-tags">
+        <span class="hero-tag">Power BI</span>
+        <span class="hero-tag">Excel</span>
+        <span class="hero-tag">Kaggle Dataset</span>
+        <span class="hero-tag">Business Intelligence</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="project-content">
+
+    <!-- BACKGROUND -->
+    <div class="content-section reveal">
+      <div class="content-label">Background</div>
+      <h2 class="content-title">What drives e-commerce revenue?</h2>
+      <div class="content-body">
+        <p>E-commerce businesses generate massive amounts of transactional data every day, yet many decisions around discounting, promotions, and inventory are still made based on intuition rather than data. This project explores whether that data can tell a clearer story.</p>
+        <p>Using a dataset of 3,660 transactions across 2024, I analyzed sales performance by category, monthly revenue trends, discount effectiveness, and customer payment preferences — with the goal of turning raw numbers into actionable business recommendations.</p>
+      </div>
+    </div>
+
+    <!-- KPI -->
+    <div class="content-section reveal">
+      <div class="content-label">At a Glance</div>
+      <h2 class="content-title">Dataset overview</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card accent">
+          <div class="kpi-number">3,660</div>
+          <div class="kpi-label">Total Transactions</div>
+        </div>
+        <div class="kpi-card accent">
+          <div class="kpi-number">Rs. 757K</div>
+          <div class="kpi-label">Total Revenue</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-number">Rs. 206.91</div>
+          <div class="kpi-label">Average Order Value</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-number">8</div>
+          <div class="kpi-label">Product Categories</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PIPELINE -->
+    <div class="content-section reveal">
+      <div class="content-label">Methodology</div>
+      <h2 class="content-title">How the analysis was done</h2>
+      <div class="pipeline">
+        <div class="pipe-step">
+          <div class="pipe-icon">📦</div>
+          <div class="pipe-label">Kaggle Dataset</div>
+          <div class="pipe-sub">Raw CSV data</div>
+        </div>
+        <!-- <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">🧹</div>
+          <div class="pipe-label">Power Query</div>
+          <div class="pipe-sub">Format & validate</div>
+        </div> -->
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">🔗</div>
+          <div class="pipe-label">Power BI (Power Query)</div>
+          <div class="pipe-sub">Cleaning, transforming, <br> and modelling data</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">📊</div>
+          <div class="pipe-label">Dashboard</div>
+          <div class="pipe-sub">Visualization</div>
+        </div>
+        <div class="pipe-arrow">→</div>
+        <div class="pipe-step">
+          <div class="pipe-icon">💡</div>
+          <div class="pipe-label">Insights</div>
+          <div class="pipe-sub">Analysis & rec</div>
+        </div>
+      </div>
+      <div class="content-body">
+        <p>The raw dataset was sourced from Kaggle, cleaned and validated using Power Query in Power BI (checking missing values, standardizing date formats, validating discount columns), then used for modeling and interactive visualization.</p>
+      </div>
+    </div>
+
+    <!-- DATASET -->
+    <div class="content-section reveal">
+      <div class="content-label">Data Structure</div>
+      <h2 class="content-title">Dataset columns</h2>
+      <table class="dataset-table">
+        <thead>
+          <tr>
+            <th>Column</th>
+            <th>Type</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="col-name">User_ID</td><td><span class="col-type">string</span></td><td>Unique customer identifier</td></tr>
+          <tr><td class="col-name">Product_ID</td><td><span class="col-type">string</span></td><td>Unique product identifier</td></tr>
+          <tr><td class="col-name">Category</td><td><span class="col-type">string</span></td><td>Product category (8 categories)</td></tr>
+          <tr><td class="col-name">Price (Rs.)</td><td><span class="col-type">float</span></td><td>Original price before discount</td></tr>
+          <tr><td class="col-name">Discount (%)</td><td><span class="col-type">integer</span></td><td>Discount percentage applied</td></tr>
+          <tr><td class="col-name">Final_Price (Rs.)</td><td><span class="col-type">float</span></td><td>Final price paid by customer</td></tr>
+          <tr><td class="col-name">Payment_Method</td><td><span class="col-type">string</span></td><td>Payment channel used</td></tr>
+          <tr><td class="col-name">Purchase_Date</td><td><span class="col-type">date</span></td><td>Transaction date (Jan–Nov 2024)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- DASHBOARD -->
+    <div class="content-section reveal">
+      <div class="content-label">Dashboard</div>
+      <h2 class="content-title">Interactive sales dashboard</h2>
+      <div class="content-body">
+        <p>The Power BI dashboard provides an interactive view of all key metrics — filterable by category and date range. It covers revenue by category, monthly sales trend, payment method distribution, and discount vs revenue scatter analysis.</p>
+      </div>
+      <div class="dashboard-preview dashboard-preview--ecom">
+        <img src="../assets/E-Commerce_Dashboard.png" alt="E-Commerce Dashboard" class="dashboard-img" />
+      </div>
+    </div>
+
+    <!-- INSIGHT -->
+    <div class="content-section reveal">
+      <div class="content-label">Insight & Recommendation</div>
+      <h2 class="content-title">What the data revealed</h2>
+      <div class="insight-grid">
+        <div class="insight-card highlight">
+          <div class="insight-icon">👕</div>
+          <div class="insight-title">Clothing & Books Lead Revenue</div>
+          <div class="insight-desc">These two categories consistently topped revenue across all months, making them the most reliable performers in the portfolio.</div>
+          <div class="insight-rec">→ Prioritize stock availability and promotions for these categories</div>
+        </div>
+        <div class="insight-card highlight">
+          <div class="insight-icon">🏷️</div>
+          <div class="insight-title">High Discounts Hurt Revenue</div>
+          <div class="insight-desc">Transactions with discounts above 30% generated lower revenue compared to those with 10–15% discounts — discounting more does not equal earning more.</div>
+          <div class="insight-rec">→ Focus on moderate discounts (10–15%) to protect margins</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">💳</div>
+          <div class="insight-title">Payment Methods are Balanced</div>
+          <div class="insight-desc">All 5 payment methods (UPI, COD, Net Banking, Debit Card, Credit Card) are distributed nearly equally — each around 20%, with less than 2% gap between them.</div>
+          <div class="insight-rec">→ Keep all payment options available for maximum flexibility</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">📉</div>
+          <div class="insight-title">November Dip Needs Attention</div>
+          <div class="insight-desc">Revenue peaked in April at 74K then declined significantly to 52K by November — a 30% drop that signals a need for year-end sales strategy.</div>
+          <div class="insight-rec">→ Plan flash sales or bundling campaigns ahead of Q4</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="project-nav">
+    <a href="oee.html" class="proj-nav-link">
+      ← Previous
+      <span class="proj-nav-title">OEE Command Center</span>
+    </a>
+    <a href="netflix.html" class="proj-nav-link" style="text-align:right">
+      Next →
+      <span class="proj-nav-title">Netflix Genre Analysis</span>
+    </a>
+  </div>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
